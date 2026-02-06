@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://oedoj6jyxjcd"]
+
+[ext_resource type="Texture2D" uid="uid://bm7eidjpp3qks" path="res://skrunklies/SkrunklyOne.png" id="1_x457i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x457i"]
+size = Vector2(200, 175)
+
+[node name="Skrunkly" type="Node2D" unique_id=191727226]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=782874121]
+scale = Vector2(0.18, 0.18)
+texture = ExtResource("1_x457i")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1703819663]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=622717614]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_x457i")

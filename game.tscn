@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://biwyfu6op4b6"]
+
+[ext_resource type="Script" uid="uid://w7gm31l2utfj" path="res://game.gd" id="1_80nbo"]
+[ext_resource type="PackedScene" uid="uid://oedoj6jyxjcd" path="res://skrunklies/skrunkly.tscn" id="2_vef74"]
+[ext_resource type="PackedScene" uid="uid://c1vr32lx4mqfh" path="res://skrunklies/skrunkly_eight.tscn" id="3_hve3p"]
+[ext_resource type="PackedScene" uid="uid://cs1req75p47js" path="res://skrunklies/skrunkly_five.tscn" id="4_mfdv2"]
+[ext_resource type="PackedScene" uid="uid://dmaisbq63xqny" path="res://skrunklies/skrunkly_four.tscn" id="5_iotsf"]
+[ext_resource type="PackedScene" uid="uid://dbngdq8avokju" path="res://skrunklies/skrunkly_seven.tscn" id="6_lc2xo"]
+[ext_resource type="PackedScene" uid="uid://dsd4k5k4q8qoj" path="res://skrunklies/skrunkly_six.tscn" id="7_215e1"]
+[ext_resource type="PackedScene" uid="uid://6ui4obi8kp2w" path="res://skrunklies/skrunkly_three.tscn" id="8_7sc4i"]
+[ext_resource type="PackedScene" uid="uid://rdfp3w5dxg1w" path="res://skrunklies/skrunkly_two.tscn" id="9_80cx4"]
+[ext_resource type="Texture2D" uid="uid://bowb4wkg08gn1" path="res://kenney_development-essentials/1×1 Pixels/pixel-white.png" id="10_hve3p"]
+
+[node name="Game" type="Node2D" unique_id=338995597 node_paths=PackedStringArray("top_left_corner_position", "instances_parent")]
+script = ExtResource("1_80nbo")
+skrunklies_scenes = Array[PackedScene]([ExtResource("2_vef74"), ExtResource("3_hve3p"), ExtResource("4_mfdv2"), ExtResource("5_iotsf"), ExtResource("6_lc2xo"), ExtResource("7_215e1"), ExtResource("8_7sc4i"), ExtResource("9_80cx4")])
+x_count = 6
+y_count = 6
+top_left_corner_position = NodePath("TopLeftCorner")
+instances_parent = NodePath("Mask/Node2D")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=924306347]
+offset_left = 79.0
+offset_top = -175.0
+offset_right = 119.0
+offset_bottom = -135.0
+color = Color(0.99607843, 0.5921569, 0.6666667, 1)
+
+[node name="TopLeftCorner" type="Marker2D" parent="." unique_id=1086009543]
+position = Vector2(730, 100)
+
+[node name="Mask" type="Sprite2D" parent="." unique_id=28524539]
+clip_children = 1
+position = Vector2(1225, 536.5)
+scale = Vector2(1298.0001, 1053)
+texture = ExtResource("10_hve3p")
+
+[node name="Node2D" type="Node2D" parent="Mask" unique_id=351483538]
+position = Vector2(-0.9437596, -0.5094967)
+scale = Vector2(0.00077041594, 0.00094966765)

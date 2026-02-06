@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://rdfp3w5dxg1w"]
+
+[ext_resource type="PackedScene" uid="uid://oedoj6jyxjcd" path="res://skrunklies/skrunkly.tscn" id="1_b1s2v"]
+[ext_resource type="Texture2D" uid="uid://cxhkh8v7inbqn" path="res://skrunklies/SkrunklyTwo.png" id="2_438e8"]
+
+[node name="Skrunkly" unique_id=191727226 instance=ExtResource("1_b1s2v")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=782874121]
+texture = ExtResource("2_438e8")
